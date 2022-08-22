@@ -1,0 +1,28 @@
+@api = http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/62f153b0c55de9a0da4c4570
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=bS71_W_BDFE",
+    "title": "THIS in JavaScript",
+    "description": "This is an old description"
+}
+
+###
+PUT {{api}}/videos/62f153b0c55de9a0da4c4570
+Content-Type: application/json
+
+{
+    "title": "THIS reserved word in JavaScript",
+    "description": "This is a new description"
+}
+
+###
+DELETE {{api}}/videos/62f149ce3fef8e446bc60ff8
